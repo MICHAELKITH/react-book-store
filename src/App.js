@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './routes/Home';
 import Categories from './routes/Categories';
+import './styles/app.css';
 
 const App = () => (
   <Router>

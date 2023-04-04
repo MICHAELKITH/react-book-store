@@ -1,5 +1,9 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   box-sizing: border-box;
+  justify-content: center;
+  inset: 14px;
+  background-color: aqua;
+  text-align: center;
 }
