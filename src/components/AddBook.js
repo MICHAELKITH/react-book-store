@@ -4,11 +4,10 @@ import { v4 as uuidv4 } from 'uuid';
 import { postBookToApi } from '../redux/books/booksSlice';
 
 const AddBook = () => {
-  const initialInputs = {
+  const [input, setInput] = useState({
     title: '',
     author: '',
-  };
-  const [input, setInput] = useState(initialInputs);
+  });
   const dispatch = useDispatch();
 
   const handleChange = (e) => {
@@ -23,11 +22,11 @@ const AddBook = () => {
     const id = uuidv4();
     const book = { id, ...input };
     dispatch(postBookToApi(book));
-    setInput(initialInputs);
+    setInput(input);
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form>
       <input
         type="text"
         onChange={handleChange}
@@ -35,6 +34,7 @@ const AddBook = () => {
         value={input.title}
         placeholder="Title"
       />
+      <br />
       <input
         type="text"
         name="author"
@@ -42,7 +42,8 @@ const AddBook = () => {
         value={input.author}
         placeholder="Author"
       />
-      <button type="submit">
+      <br />
+      <button type="button" onClick={handleSubmit}>
         Add Book
       </button>
     </form>

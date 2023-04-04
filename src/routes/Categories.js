@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { checkStatus } from '../redux/categories/categoriesSlice';
 
 const Categories = () => {
-  const { message } = useSelector((store) => store.categorie);
+  const { message } = useSelector((store) => store.categories);
   const dispatch = useDispatch();
   const handleClick = () => {
     dispatch(checkStatus());
