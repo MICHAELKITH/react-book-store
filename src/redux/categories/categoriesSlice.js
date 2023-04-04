@@ -9,9 +9,10 @@ const categoriesSlice = createSlice({
   name: 'categories',
   initialState,
   reducers: {
-    checkStatus: (state) => {
-      state.message = 'Coming Soon!';
-    },
+    checkStatus: (state) => ({
+      ...state,
+      message: 'Coming Soon!',
+    }),
   },
 });
 
