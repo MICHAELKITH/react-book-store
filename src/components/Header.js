@@ -3,7 +3,7 @@ import NavBar from './Navbar';
 
 const Header = () => (
   <>
-    <h1>Book Store</h1>
+    <h1>Book-Store</h1>
     <NavBar />
   </>
 );

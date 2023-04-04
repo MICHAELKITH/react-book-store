@@ -12,7 +12,7 @@ const Categories = () => {
   return (
     <div id="categories">
       <button onClick={handleClick} type="button">
-        Check State
+        More Items
       </button>
       <h2>{message}</h2>
     </div>
