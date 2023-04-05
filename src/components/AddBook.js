@@ -10,7 +10,7 @@ const AddBook = () => {
   });
   const dispatch = useDispatch();
 
-  const handleChange = (e) => {
+  const getInputs = (e) => {
     const { name, value } = e.target;
     const inputs = { [name]: value };
     setInput({ ...input, ...inputs });
@@ -28,7 +28,7 @@ const AddBook = () => {
     <form>
       <input
         type="text"
-        onChange={handleChange}
+        onChange={getInputs}
         name="title"
         value={input.title}
         placeholder="Title"
@@ -37,7 +37,7 @@ const AddBook = () => {
       <input
         type="text"
         name="author"
-        onChange={handleChange}
+        onChange={getInputs}
         value={input.author}
         placeholder="Author"
       />
