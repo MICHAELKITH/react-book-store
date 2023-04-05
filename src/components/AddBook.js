@@ -42,7 +42,7 @@ const AddBook = () => {
         placeholder="Author"
       />
       <br />
-      <button type="button" onClick={handleSubmit}>
+      <button type="submit" onClick={handleSubmit}>
         Add Book
       </button>
     </form>

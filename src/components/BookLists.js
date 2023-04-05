@@ -4,12 +4,10 @@ import Book from './Book';
 import Loader from './Loader';
 import { getBooksData } from '../redux/books/booksSlice';
 
-const BookList = () => {
+const BookLists = () => {
   const {
     books, isLoading, error, ifSuccess,
-  } = useSelector(
-    (state) => state.book,
-  );
+  } = useSelector((store) => store.book);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -17,24 +15,19 @@ const BookList = () => {
   }, [dispatch, ifSuccess]);
 
   if (isLoading) {
-    return <Loader />;
+    return (
+      <div>
+        <Loader />
+      </div>
+    );
   }
-
-  if (error) {
-    return <h2>Error</h2>;
-  }
-
-  if (books.length === 0) {
-    return <h2>No books available. Please check back later.</h2>;
-  }
-
-  return (
-    <div>
-      {books.map((book) => (
-        <Book key={book.id} book={book} />
-      ))}
+  if (error) return <h2>Something Went Wrong</h2>;
+  if (books.length === 0) return <h2>No books available. Please check later </h2>;
+  return books.map((book) => (
+    <div key={book.id} className="Lesson-Panel">
+      <Book key={book.id} book={book} />
     </div>
-  );
+  ));
 };
 
-export default BookList;
+export default BookLists;
