@@ -30,7 +30,7 @@ header {
   background-color: var(--white-two);
 }
 
-.Title-nav {
+.titles{
   display: flex;
   align-items: center;
   gap: 3rem;
@@ -87,8 +87,8 @@ button[type='submit'] {
   opacity: 1;
 }
 
-/* Bookstore-CMS styles */
-.Bookstore-CMS {
+/* store-CMS styles */
+.store-CMS {
   padding-left: 3rem;
   font-family: var(--Montserrat);
   font-size: 1.875rem;
@@ -96,8 +96,8 @@ button[type='submit'] {
   color: var(--azure);
 }
 
-/* Lesson-Panel styles */
-.Lesson-Panel {
+/* attendance styles */
+.attendance {
   margin: 2rem auto;
   width: 85%;
   padding: 2rem 4rem 1.625rem;
@@ -112,7 +112,7 @@ button[type='submit'] {
   gap: 3rem;
 }
 
-.School-of {
+.class- {
   margin: 0 2.438rem 0 0;
   opacity: 0.5;
   font-family: var(--Montserrat);
@@ -174,17 +174,17 @@ ul {
   align-items: center;
 }
 
-.book-informations {
+.book-info {
   width: 40%;
 }
 
-.book-progress {
+.item-progress {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.Percent-Complete {
+.Complete-Task {
   font-family: var(--Montserrat);
   margin: 0;
   font-size: 2rem;
@@ -196,21 +196,21 @@ ul {
   color: #121212;
 }
 
-.Line-2 {
+.level-one {
   width: 0.125rem;
   height: 1.5rem;
   margin: 0.75rem 1.063rem 0 0.938rem;
   border: solid 1px var(--white);
 }
 
-.Line-3 {
+.level-two {
   width: 0.125rem;
   height: 4.375rem;
   margin: 0.75rem 1.063rem 0 0.938rem;
   border: solid 1px var(--white);
 }
 
-.progress-text {
+.task-progress {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -224,11 +224,11 @@ ul {
   background-color: var(--white-two);
 }
 
-.chapters {
+.levels {
   margin-right: 4rem;
 }
 
-.Current-Chapter {
+.main-levels {
   font-family: var(--RobotoSlab);
   font-size: 0.813rem;
   font-weight: 300;
@@ -240,11 +240,11 @@ ul {
   opacity: 0.5;
 }
 
-.Oval {
+.CMS-Circle {
   margin-right: 10%;
 }
 
-.Current-Lesson {
+.main-task {
   font-family: var(--RobotoSlab);
   font-size: 1rem;
   font-weight: 300;

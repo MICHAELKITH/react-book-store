@@ -24,7 +24,7 @@ const BookLists = () => {
   if (error) return <h2>Something Went Wrong</h2>;
   if (books.length === 0) return <h2>No books available. Please check later </h2>;
   return books.map((book) => (
-    <div key={book.id} className="Lesson-Panel">
+    <div key={book.id} className="attendance">
       <Book key={book.id} book={book} />
     </div>
   ));

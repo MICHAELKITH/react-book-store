@@ -8,8 +8,8 @@ const Book = ({ book }) => {
   const dispatch = useDispatch();
   return (
     <div className="book-Card">
-      <div key={book.id} className="book-informations">
-        <p className="School-of">{book.category}</p>
+      <div key={book.id} className="book-info">
+        <p className="class-">{book.category}</p>
         <p className="Title">{book.title}</p>
         <p className="Author">{book.author}</p>
         <ul>
@@ -18,7 +18,7 @@ const Book = ({ book }) => {
               Comments
             </button>
           </li>
-          <div className="Line-2" />
+          <div className="level-one" />
           <li>
             <button
               className="Remove"
@@ -30,7 +30,7 @@ const Book = ({ book }) => {
               Remove
             </button>
           </li>
-          <div className="Line-2" />
+          <div className="level-one" />
           <li>
             <button className="Edit" type="button">
               Edit
@@ -38,20 +38,20 @@ const Book = ({ book }) => {
           </li>
         </ul>
       </div>
-      <div className="book-progress">
+      <div className="item-progress">
         <ProgressBar />
-        <div className="progress-text">
-          <p className="Percent-Complete">
+        <div className="task-progress">
+          <p className="Complete-Task">
             {Math.floor(Math.random() * (99 - 0)) + 0}
             <span>%</span>
           </p>
           <p className="Completed">Completed</p>
         </div>
       </div>
-      <div className="Line-3" />
-      <div className="chapters">
-        <p className="Current-Chapter">CURRENT CHAPTER</p>
-        <p className="Current-Lesson">Chapter 12</p>
+      <div className="level-two" />
+      <div className="levels">
+        <p className="main-levels">CURRENT CHAPTER</p>
+        <p className="main-task">Chapter 12</p>
         <button type="button" className="Update-progress">
           UPDATE PROGRESS
         </button>
