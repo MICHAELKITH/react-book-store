@@ -184,6 +184,7 @@ ul {
   align-items: center;
   gap: 1rem;
 }
+
 .main-levels {
   font-family: var(--RobotoSlab);
   font-size: 0.813rem;
@@ -249,7 +250,6 @@ ul {
   color: #888;
 }
 
-
 .Complete-Task {
   font-family: var(--Montserrat);
   margin: 0;
@@ -293,4 +293,3 @@ ul {
 .levels {
   margin-right: 4rem;
 }
-
