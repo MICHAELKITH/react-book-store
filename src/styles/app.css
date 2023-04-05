@@ -10,11 +10,16 @@
   --cool-blue: #4386bf;
   --very-light-pink: #c4c4c4;
 }
-
-body {
+/* Set basic styles */
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   background-color: #f5f6fa;
 }
 
@@ -41,14 +46,12 @@ nav a {
   font-family: var(--Montserrat);
   font-size: 0.813rem;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 1.9px;
   color: #121212;
   opacity: 0.5;
 }
 
+/* Form styles */
 form {
   margin-bottom: 4rem;
   display: flex;
@@ -64,9 +67,6 @@ input {
   font-size: 1rem;
   font-family: var(--Montserrat);
   font-weight: bolder;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.15px;
   color: var(--very-light-pink);
 }
@@ -78,9 +78,6 @@ button[type='submit'] {
   font-family: var(--RobotoSlab);
   font-size: 0.813rem;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
   color: var(--white-two);
@@ -90,18 +87,16 @@ button[type='submit'] {
   opacity: 1;
 }
 
+/* Bookstore-CMS styles */
 .Bookstore-CMS {
   padding-left: 3rem;
   font-family: var(--Montserrat);
   font-size: 1.875rem;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: var(--azure);
 }
 
+/* Lesson-Panel styles */
 .Lesson-Panel {
   margin: 2rem auto;
   width: 85%;
@@ -123,10 +118,6 @@ button[type='submit'] {
   font-family: var(--Montserrat);
   font-size: 1.2rem;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #121212;
 }
 

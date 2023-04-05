@@ -4,7 +4,7 @@ import AddBook from '../components/AddBook';
 
 const Home = () => (
   <div className="container">
-    <div className="bookstore-container">
+    <div className="store-container">
       <BookLists />
     </div>
     <div className="Line" />
