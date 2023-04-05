@@ -11,10 +11,9 @@ const AddBook = () => {
   const dispatch = useDispatch();
 
   const handleChange = (e) => {
-    setInput((prevState) => ({
-      ...prevState,
-      [e.target.name]: e.target.value,
-    }));
+    const { name, value } = e.target;
+    const inputs = { [name]: value };
+    setInput({ ...input, ...inputs });
   };
 
   const handleSubmit = (e) => {
