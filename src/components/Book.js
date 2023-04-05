@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { deleteBookFromApi } from '../redux/books/booksSlice';
-import ProgressBar from './ProgressBar';
+import ProgressBar from './ProgressShow';
 
 const Book = ({ book }) => {
   const dispatch = useDispatch();

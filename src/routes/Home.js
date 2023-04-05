@@ -1,6 +1,6 @@
 import React from 'react';
-import BookLists from '../components/BookLists';
-import AddBook from '../components/AddBook';
+import BookLists from '../components/BookItem';
+import AddBook from '../components/BookData';
 
 const Home = () => (
   <div className="container">
