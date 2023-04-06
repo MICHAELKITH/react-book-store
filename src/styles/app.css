@@ -281,8 +281,8 @@ ul {
 .Completed {
   margin: 0;
   border-radius: 4px;
-  border: solid 1px var(--white);
-  background-color: var(--white-two);
+  border: none;
+  color: var(--very-light-pink);
 }
 
 .levels {
