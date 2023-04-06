@@ -43,7 +43,7 @@ const AddBook = () => {
       />
       <br />
       <button type="submit" onClick={handleSubmit}>
-        Add Book
+        ADD BOOK
       </button>
     </form>
   );
