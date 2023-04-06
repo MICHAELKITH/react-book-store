@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap');
+
+:root {
+  --Montserrat: 'Montserrat', sans-serif;
+  --RobotoSlab: 'Roboto Slab', serif;
+  --azure: #0290ff;
+  --z: #fafafa;
+  --white: #e8e8e8;
+  --white-two: #fff;
+  --cool-blue: #4386bf;
+  --very-light-pink: #c4c4c4;
+}
+
+/* Set basic styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f6fa;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white-two);
+}
+
+.titles {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: var(--Montserrat);
+  font-size: 0.813rem;
+  font-weight: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+  opacity: 0.5;
+}
+
+/* Form styles */
+form {
+  margin-bottom: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+input {
+  width: 40%;
+  padding: 1rem 0.5rem;
+  border-radius: 2px;
+  border: solid 1px var(--white);
+  background-color: var(--white-two);
+  font-size: 1rem;
+  font-family: var(--Montserrat);
+  font-weight: bolder;
+  letter-spacing: -0.15px;
+  color: var(--very-light-pink);
+}
+
+button[type='submit'] {
+  width: 10%;
+  background-color: var(--azure);
+  border: none;
+  font-family: var(--RobotoSlab);
+  font-size: 0.813rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--white-two);
+}
+
+.active {
+  opacity: 1;
+}
+
+/* store-CMS styles */
+.store-CMS {
+  padding-left: 3rem;
+  font-family: var(--Montserrat);
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: var(--azure);
+}
+
+/* attendance styles */
+.attendance {
+  margin: 2rem auto;
+  width: 85%;
+  padding: 2rem 4rem 1.625rem;
+  border-radius: 4px;
+  border: solid 1px var(--white);
+  background-color: var(--white-two);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.class-of {
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  font-family: var(--Montserrat);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #121212;
+}
+
+.Title {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+  font-family: var(--RobotoSlab);
+}
+
+.Author {
+  margin: 0;
+  font-family: var(--RobotoSlab);
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--cool-blue);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  align-items: center;
+}
+
+.Comments,
+.Remove,
+.Edit {
+  font-family: var(--RobotoSlab);
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--cool-blue);
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.book-Card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-info {
+  width: 40%;
+}
+
+.item-progress {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--Montserrat);
+}
+
+.main-levels {
+  font-family: var(--RobotoSlab);
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+  opacity: 0.5;
+}
+
+.CMS-Circle {
+  margin-right: 10%;
+}
+
+.main-task {
+  font-family: var(--RobotoSlab);
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.Update-progress {
+  font-family: var(--RobotoSlab);
+  padding: 0.8em 1.4rem;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--white-two);
+  border-radius: 3px;
+  background-color: var(--azure);
+  border: none;
+}
+
+.Line {
+  width: 90%;
+  border: solid 1px var(--white);
+  margin: 0 auto;
+}
+
+.form-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form-title {
+  font-family: var(--Montserrat);
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.Complete-Task {
+  font-family: var(--Montserrat);
+  margin: 0;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.level-one {
+  width: 0.125rem;
+  height: 1.5rem;
+  margin: 0.75rem 1.063rem 0 0.938rem;
+  border: solid 1px var(--white);
+}
+
+.level-two {
+  width: 0.125rem;
+  height: 4.375rem;
+  margin: 0.75rem 1.063rem 0 0.938rem;
+  border: solid 1px var(--white);
+}
+
+.task-progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Completed {
+  margin: 0;
+  border-radius: 4px;
+  border: none;
+  color: var(--very-light-pink);
+}
+
+.levels {
+  margin-right: 4rem;
+}
