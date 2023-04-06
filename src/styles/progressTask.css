@@ -1,7 +1,7 @@
 :root {
   --size: 5rem;
   --fg: #0290ff;
-  --bg: #def;
+  --bg: rgb(211, 211, 211);
   --value: 64;
 }
 
