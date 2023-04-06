@@ -31,7 +31,7 @@ const AddBook = () => {
         onChange={getInputs}
         name="title"
         value={input.title}
-        placeholder="Title"
+        placeholder=" Book Title"
       />
       <br />
       <input
@@ -39,11 +39,11 @@ const AddBook = () => {
         name="author"
         onChange={getInputs}
         value={input.author}
-        placeholder="Author"
+        placeholder="Categories"
       />
       <br />
-      <button type="button" onClick={handleSubmit}>
-        Add Book
+      <button type="submit" onClick={handleSubmit}>
+        ADD BOOK
       </button>
     </form>
   );

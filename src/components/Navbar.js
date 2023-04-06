@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => (
   <nav>
-    <Link to="/">Home|</Link>
-    <Link to="/Categories">Categories</Link>
+    <NavLink to="/">BOOKS</NavLink>
+    <NavLink to="/Categories">CATEGORIES</NavLink>
   </nav>
 );
 
