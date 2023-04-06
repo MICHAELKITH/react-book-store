@@ -9,7 +9,7 @@ const Book = ({ book }) => {
   return (
     <div className="book-Card">
       <div key={book.id} className="book-info">
-        <p className="class-">{book.category}</p>
+        <p className="class-of">{book.category}</p>
         <p className="Title">{book.title}</p>
         <p className="Author">{book.author}</p>
         <ul>
@@ -51,7 +51,7 @@ const Book = ({ book }) => {
       <div className="level-two" />
       <div className="levels">
         <p className="main-levels">CURRENT CHAPTER</p>
-        <p className="main-task">Chapter 12</p>
+        <p className="main-task">Chapter 10</p>
         <button type="button" className="Update-progress">
           UPDATE PROGRESS
         </button>

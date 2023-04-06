@@ -12,15 +12,10 @@
 }
 
 /* Set basic styles */
-*,
-*::before,
-*::after {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
   background-color: #f5f6fa;
 }
 
@@ -113,7 +108,7 @@ button[type='submit'] {
   gap: 3rem;
 }
 
-.class- {
+.class-of {
   margin: 0 2.438rem 0 0;
   opacity: 0.5;
   font-family: var(--Montserrat);
